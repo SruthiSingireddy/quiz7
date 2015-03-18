@@ -1,0 +1,17 @@
+{
+    "contents" : "\\documentclass{article}\r\n\r\n\\begin{document}\r\n\r\n\\section*{Ebola virus epidemic in West Africa}\r\n\r\n<<chunk1, echo=FALSE>>=\r\n\r\nlibrary(rvest)\r\npop <- html(\"http://en.wikipedia.org/wiki/Ebola_virus_epidemic_in_West_Africa\")\r\ndf <- html_table(html_nodes(pop, \"table\")[[2]])\r\nhead(df)\r\n\r\n\r\ntotalcases  <- df[10,2]\r\ntotaldeaths <- df[10,3]\r\nUScases     <-df[6,2] \r\nUsdeaths    <-df[6,3] \r\n@\r\n\r\nThe World Health Organization (WHO) and respective governments have reported a total of \\Sexpr{totalcases} suspected cases and  \\Sexpr{totaldeaths} deaths, though the WHO believes that this substantially understates the magnitude of the outbreak. In the United States there has been \\Sexpr{UScases} reported cases and \\Sexpr{Usdeaths} deaths.  \r\n\r\n\\end{document}",
+    "created" : 1426543670519.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1772475740",
+    "id" : "506D2511",
+    "lastKnownWriteTime" : 1426543715,
+    "path" : "~/GitExcecise/RM/ebola.Rnw",
+    "project_path" : "ebola.Rnw",
+    "properties" : {
+        "tempName" : "Untitled3"
+    },
+    "source_on_save" : false,
+    "type" : "sweave"
+}

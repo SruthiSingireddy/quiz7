@@ -1,0 +1,28 @@
+<html>
+
+<head>
+<title>List of people who died climbing Mount Everest</title>
+</head>
+
+<body>
+<h3> List of people who died climbing Mount Everest </h3>
+
+
+<!--begin.rcode
+library("rvest")
+
+pop <- html("http://en.wikipedia.org/wiki/List_of_people_who_died_climbing_Mount_Everest")
+df <- html_table(fill = TRUE,html_nodes(pop, "table")[[2]])
+
+head(df)
+summary(df)
+end.rcode-->
+
+
+
+<!--begin.rcode fig.width=7, fig.height=6
+
+end.rcode-->
+
+</body>
+</html>

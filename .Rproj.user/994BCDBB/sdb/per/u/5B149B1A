@@ -1,0 +1,17 @@
+{
+    "contents" : "install.packages(\"rvest\")\r\nlibrary(rvest)\r\npop <- html(\"http://en.wikipedia.org/wiki/List_of_cities_proper_by_population\")\r\ndf <- html_table(html_nodes(pop, \"table\")[[2]])\r\nhead(df)\r\nsummary(df)",
+    "created" : 1425510616979.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1606971920",
+    "id" : "5B149B1A",
+    "lastKnownWriteTime" : 4294967295,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

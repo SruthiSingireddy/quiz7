@@ -1,0 +1,17 @@
+{
+    "contents" : "<html>\n\n<head>\n<title>List of people who died climbing Mount Everest</title>\n</head>\n\n<body>\n\n<p>Everest</p>\n\n<!--begin.rcode\nlibrary(rvest)\npop <- html(\" http://en.wikipedia.org/wiki/List_of_people_who_died_climbing_Mount_Everest\")\ndf <- html_table(html_nodes(pop, \"table\")[[2]])\nhead(df)-->\n\n<p>You can also embed plots, for example:</p>\n\n<!--begin.rcode fig.width=7, fig.height=6\n->\n\n</body>\n</html>\n",
+    "created" : 1426543379767.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2627033031",
+    "id" : "16838AC9",
+    "lastKnownWriteTime" : 1426544365,
+    "path" : "~/GitExcecise/RM/Everest.html",
+    "project_path" : "Everest.html",
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "source_on_save" : false,
+    "type" : "html"
+}

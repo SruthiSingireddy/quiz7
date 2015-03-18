@@ -1,0 +1,16 @@
+{
+    "contents" : "\\documentclass{article}\n\n\\begin{document}\n\n\\section*{Blood Types in America}\n\nAlthough all blood is made of the same basic elements, not all blood is alike. In fact, there are eight different common blood types, which are determined by the presence or absence of certain antigens – substances that can trigger an immune response if they are foreign to the body. Since some antigens can trigger a patient's immune system to attack the transfused blood, safe blood transfusions depend on careful blood typing and cross-matching.\n\n\n<<chunk1, echo=FALSE>>=\n\nlibrary(ggplot2)\n\nblood.type <- c(\"O+\",\"A+\",\"B+\",\"AB+\",\"O-\",\"A-\",\"B-\",\"AB-\")\nperccent<- c(37.4,35.7,8.5,3.4,6.6,6.3,1.5,0.6)\n\ndf = data.frame(blood.type,perccent)\n\n g<-ggplot(df,aes(x=blood.type, y=perccent,fill=blood.type))+geom_bar(stat = \"identity\")\ng+scale_fill_grey()\n@\n\nAs the chart above shows, O positive is the most common blood type in the United States. Not all ethnic groups have the same mix of these blood types. Hispanic people, for example, have a relatively high number of O’s, while Asian people have a relatively high number of B’s.\n\n<<chunk2, eval = F>>=\n3+7\n@\n\n\n\\end{document}",
+    "created" : 1426540831182.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1939312586",
+    "id" : "EB7E7996",
+    "lastKnownWriteTime" : 1426540917,
+    "path" : "~/R Lab/labpdf.Rnw",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "sweave"
+}

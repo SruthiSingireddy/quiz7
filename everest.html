@@ -1,0 +1,101 @@
+<html>
+
+<head>
+<style type="text/css">
+.knitr.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+},
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0em 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.rimage.left {
+  text-align: left;
+}
+.rimage.right {
+  text-align: right;
+}
+.rimage.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+<title>List of people who died climbing Mount Everest</title>
+</head>
+
+<body>
+<h3> List of people who died climbing Mount Everest </h3>
+
+
+<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(</span><span class="hl str">&quot;rvest&quot;</span><span class="hl std">)</span>
+
+<span class="hl std">pop</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">html</span><span class="hl std">(</span><span class="hl str">&quot;http://en.wikipedia.org/wiki/List_of_people_who_died_climbing_Mount_Everest&quot;</span><span class="hl std">)</span>
+<span class="hl std">df</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">html_table</span><span class="hl std">(</span><span class="hl kwc">fill</span> <span class="hl std">=</span> <span class="hl num">TRUE</span><span class="hl std">,</span><span class="hl kwd">html_nodes</span><span class="hl std">(pop,</span> <span class="hl str">&quot;table&quot;</span><span class="hl std">)[[</span><span class="hl num">2</span><span class="hl std">]])</span>
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in html_nodes(pop, &quot;table&quot;)[[2]]: subscript out of bounds
+</pre></div>
+<div class="source"><pre class="knitr r"><span class="hl kwd">head</span><span class="hl std">(df)</span>
+</pre></div>
+<div class="output"><pre class="knitr r">##                                                   
+## 1 function (x, df1, df2, ncp, log = FALSE)        
+## 2 {                                               
+## 3     if (missing(ncp))                           
+## 4         .External(C_df, x, df1, df2, log)       
+## 5     else .External(C_dnf, x, df1, df2, ncp, log)
+## 6 }
+</pre></div>
+<div class="source"><pre class="knitr r"><span class="hl kwd">summary</span><span class="hl std">(df)</span>
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in object[[i]]: object of type 'closure' is not subsettable
+</pre></div>
+</div></div>
+
+
+
+
+
+</body>
+</html>
